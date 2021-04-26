@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.free-section .btn-green, .header-section .analytics .try-button .btn-green {
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.header-section {
+  background-color: #4491C0;
+}
+.header-section header {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  padding: 20px 0;
+  color: #C0E6FC;
+}
+.header-section header nav {
+  padding-top: 5%;
+}
+.header-section header nav ul {
+  list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 80px);
+  font-size: 12px;
+}
+.header-section header nav ul li:first-child {
+  color: #fff;
+}
+.header-section header nav ul li:last-child {
+  border: 0.2px solid #C0E6FC;
+  padding: 4px;
+  text-align: center;
+}
+.header-section header nav ul li:hover {
+  color: #fff;
+}
+.header-section .analytics {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: #fff;
+  padding: 20px 0;
+}
+.header-section .analytics p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.header-section .analytics .mobile-app {
+  font-size: 20px;
+}
+.header-section .analytics .try-button .btn-green {
+  background-color: #44CB9F;
+  border: 1px solid #44CB9F;
+}
+
+.progress-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 4rem 0;
+}
+.progress-section .progress {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #A0A4AB;
+  border-radius: 50%;
+  position: relative;
+}
+.progress-section .progress-text p {
+  margin-bottom: 10px;
+}
+.progress-section .progress-text p:last-child {
+  color: #A0A4AB;
+}
+
+.rankings-bg {
+  background-color: #ECF0F3;
+  padding-top: 4rem;
+}
+.rankings-bg .rankings {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 2rem;
+}
+.rankings-bg .rankings .ranking-text p {
+  color: #A0A4AB;
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: justify;
+}
+.rankings-bg .rankings .ranking-img figcaption {
+  margin-left: 3rem;
+}
+
+.coverage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 130px;
+  padding: 4rem 0;
+}
+.coverage p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #A0A4AB;
+  text-align: justify;
+}
+
+.trusted-bg {
+  background-color: #ECF0F3;
+  padding: 4rem 0;
+}
+.trusted-bg h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.trusted-bg img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+}
+.trusted-bg p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #A0A4AB;
+  line-height: 1.7;
+}
+.trusted-bg span {
+  color: #4491C0;
+}
+.trusted-bg .trusted {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  grid-gap: 60px;
+}
+.trusted-bg .trusted .trusted-1 {
+  padding-right: 35px;
+  border-right: 0.3px solid #DCE0E3;
+}
+.trusted-bg .trusted .trusted-2 {
+  padding-right: 35px;
+  border-right: 0.3px solid #DCE0E3;
+}
+
+.free-section {
+  background-color: #4491C0;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.free-section h1 {
+  font-size: 2.2rem;
+}
+.free-section h1 span {
+  text-decoration: underline;
+}
+.free-section p {
+  margin: 8px 0;
+}
+.free-section .btn-green {
+  background-color: #44CB9F;
+  border: 1px solid #44CB9F;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 4rem 0;
+}
+footer ul {
+  list-style: none;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(8, 44px);
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-section header {
+    grid-template-columns: 1fr;
+  }
+  .header-section header div {
+    justify-self: center;
+  }
+  .header-section header ul {
+    grid-template-columns: repeat(5, auto);
+  }
+  .header-section .analytics {
+    grid-template-columns: 1fr;
+  }
+  .header-section .analytics .mobile-app {
+    justify-self: center;
+    text-align: center;
+  }
+  .header-section .analytics .try-button {
+    justify-self: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .coverage {
+    grid-template-columns: 1fr;
+  }
+  .coverage p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #A0A4AB;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
